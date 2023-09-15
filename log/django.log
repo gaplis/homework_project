@@ -1,0 +1,866 @@
+INFO 2023-08-29 20:34:39,637 autoreload 18160 16272 Watching for file changes with StatReloader
+INFO 2023-08-29 20:34:41,220 basehttp 18160 7516 "GET / HTTP/1.1" 200 208
+INFO 2023-08-29 20:34:50,741 basehttp 18160 7516 "GET /about/ HTTP/1.1" 200 94
+INFO 2023-08-29 20:36:17,769 autoreload 17584 19912 Watching for file changes with StatReloader
+INFO 2023-08-29 20:36:19,199 basehttp 17584 20128 "GET / HTTP/1.1" 200 208
+INFO 2023-08-29 20:36:22,701 basehttp 17584 20128 "GET /about/ HTTP/1.1" 200 94
+INFO 2023-09-05 16:45:02,920 autoreload 3496 8884 Watching for file changes with StatReloader
+INFO 2023-09-05 16:45:03,930 basehttp 3496 18700 "GET / HTTP/1.1" 200 208
+WARNING 2023-09-05 16:45:07,467 log 3496 18700 Not Found: /g
+WARNING 2023-09-05 16:45:07,467 basehttp 3496 18700 "GET /g HTTP/1.1" 404 2521
+WARNING 2023-09-05 16:45:11,654 log 3496 18700 Not Found: /hw3/
+WARNING 2023-09-05 16:45:11,655 basehttp 3496 18700 "GET /hw3/ HTTP/1.1" 404 2620
+WARNING 2023-09-05 16:45:15,413 log 3496 18700 Not Found: /hw3/client
+WARNING 2023-09-05 16:45:15,414 basehttp 3496 18700 "GET /hw3/client HTTP/1.1" 404 2638
+ERROR 2023-09-05 16:45:18,991 log 3496 18700 Internal Server Error: /hw3/client/1
+Traceback (most recent call last):
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\defaulttags.py", line 193, in render
+    values = list(values)
+             ^^^^^^^^^^^^
+TypeError: 'ManyRelatedManager' object is not iterable
+ERROR 2023-09-05 16:45:18,996 basehttp 3496 18700 "GET /hw3/client/1 HTTP/1.1" 500 156808
+INFO 2023-09-05 16:45:55,400 autoreload 3496 8884 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_3_app\views.py changed, reloading.
+INFO 2023-09-05 16:45:55,969 autoreload 13948 22496 Watching for file changes with StatReloader
+ERROR 2023-09-05 16:45:58,534 log 13948 14124 Internal Server Error: /hw3/client/1
+Traceback (most recent call last):
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\views\generic\base.py", line 226, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_3_app\views.py", line 14, in get_context_data
+    print(orders.products)
+          ^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2023-09-05 16:45:58,536 basehttp 13948 14124 "GET /hw3/client/1 HTTP/1.1" 500 80783
+INFO 2023-09-05 16:46:17,816 autoreload 13948 22496 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_3_app\views.py changed, reloading.
+INFO 2023-09-05 16:46:18,284 autoreload 13508 11792 Watching for file changes with StatReloader
+ERROR 2023-09-05 16:46:20,392 log 13508 2960 Internal Server Error: /hw3/client/1
+Traceback (most recent call last):
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\defaulttags.py", line 193, in render
+    values = list(values)
+             ^^^^^^^^^^^^
+TypeError: 'ManyRelatedManager' object is not iterable
+ERROR 2023-09-05 16:46:20,396 basehttp 13508 2960 "GET /hw3/client/1 HTTP/1.1" 500 156945
+INFO 2023-09-05 16:46:54,433 autoreload 13508 11792 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_3_app\views.py changed, reloading.
+INFO 2023-09-05 16:46:54,941 autoreload 20308 19960 Watching for file changes with StatReloader
+ERROR 2023-09-05 16:46:55,544 log 20308 2628 Internal Server Error: /hw3/client/1
+Traceback (most recent call last):
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\defaulttags.py", line 193, in render
+    values = list(values)
+             ^^^^^^^^^^^^
+TypeError: 'ManyRelatedManager' object is not iterable
+ERROR 2023-09-05 16:46:55,549 basehttp 20308 2628 "GET /hw3/client/1 HTTP/1.1" 500 156945
+INFO 2023-09-05 16:47:11,586 autoreload 20308 19960 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_3_app\views.py changed, reloading.
+INFO 2023-09-05 16:47:12,076 autoreload 17584 10004 Watching for file changes with StatReloader
+ERROR 2023-09-05 16:47:12,271 log 17584 7872 Internal Server Error: /hw3/client/1
+Traceback (most recent call last):
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\defaulttags.py", line 193, in render
+    values = list(values)
+             ^^^^^^^^^^^^
+TypeError: 'ManyRelatedManager' object is not iterable
+ERROR 2023-09-05 16:47:12,275 basehttp 17584 7872 "GET /hw3/client/1 HTTP/1.1" 500 156945
+INFO 2023-09-05 16:47:41,253 autoreload 16272 15560 Watching for file changes with StatReloader
+INFO 2023-09-05 16:47:59,908 autoreload 16272 15560 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_3_app\views.py changed, reloading.
+INFO 2023-09-05 16:48:00,355 autoreload 10732 12320 Watching for file changes with StatReloader
+ERROR 2023-09-05 16:48:02,818 log 10732 20824 Internal Server Error: /hw3/client/1
+Traceback (most recent call last):
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\defaulttags.py", line 193, in render
+    values = list(values)
+             ^^^^^^^^^^^^
+TypeError: 'ManyRelatedManager' object is not iterable
+ERROR 2023-09-05 16:48:02,821 basehttp 10732 20824 "GET /hw3/client/1 HTTP/1.1" 500 156945
+INFO 2023-09-05 16:48:21,191 autoreload 10732 12320 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_3_app\views.py changed, reloading.
+INFO 2023-09-05 16:48:21,637 autoreload 19272 21940 Watching for file changes with StatReloader
+ERROR 2023-09-05 16:48:23,768 log 19272 12772 Internal Server Error: /hw3/client/1
+Traceback (most recent call last):
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\defaulttags.py", line 193, in render
+    values = list(values)
+             ^^^^^^^^^^^^
+TypeError: 'ManyRelatedManager' object is not iterable
+ERROR 2023-09-05 16:48:23,772 basehttp 19272 12772 "GET /hw3/client/1 HTTP/1.1" 500 156945
+INFO 2023-09-05 16:48:37,382 autoreload 19272 21940 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_3_app\views.py changed, reloading.
+INFO 2023-09-05 16:48:37,862 autoreload 19684 17672 Watching for file changes with StatReloader
+ERROR 2023-09-05 16:48:39,372 log 19684 15268 Internal Server Error: /hw3/client/1
+Traceback (most recent call last):
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\views\generic\base.py", line 226, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_3_app\views.py", line 14, in get_context_data
+    print(orders[1])
+          ~~~~~~^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\db\models\query.py", line 450, in __getitem__
+    return qs._result_cache[0]
+           ~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+ERROR 2023-09-05 16:48:39,375 basehttp 19684 15268 "GET /hw3/client/1 HTTP/1.1" 500 84604
+INFO 2023-09-05 16:50:34,625 autoreload 19684 17672 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_3_app\views.py changed, reloading.
+INFO 2023-09-05 16:50:35,121 autoreload 22236 11632 Watching for file changes with StatReloader
+INFO 2023-09-05 16:50:54,789 autoreload 22236 11632 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_3_app\views.py changed, reloading.
+INFO 2023-09-05 16:50:55,273 autoreload 14580 22172 Watching for file changes with StatReloader
+ERROR 2023-09-05 16:50:57,112 log 14580 19432 Internal Server Error: /hw3/client/1
+Traceback (most recent call last):
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\template\defaulttags.py", line 193, in render
+    values = list(values)
+             ^^^^^^^^^^^^
+TypeError: 'ManyRelatedManager' object is not iterable
+ERROR 2023-09-05 16:50:57,115 basehttp 14580 19432 "GET /hw3/client/1 HTTP/1.1" 500 156945
+INFO 2023-09-05 16:55:37,512 autoreload 14580 22172 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_3_app\views.py changed, reloading.
+INFO 2023-09-05 16:55:37,961 autoreload 21188 2248 Watching for file changes with StatReloader
+INFO 2023-09-05 16:55:42,700 basehttp 21188 4440 "GET /hw3/client/1 HTTP/1.1" 200 317
+INFO 2023-09-05 16:55:44,920 basehttp 21188 4440 "GET /hw3/client/1 HTTP/1.1" 200 317
+INFO 2023-09-05 16:55:45,515 basehttp 21188 4440 "GET /hw3/client/1 HTTP/1.1" 200 317
+INFO 2023-09-05 16:56:00,854 basehttp 21188 4440 "GET /hw3/client/2 HTTP/1.1" 200 317
+INFO 2023-09-05 16:56:45,718 autoreload 21188 2248 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_3_app\views.py changed, reloading.
+INFO 2023-09-05 16:56:46,203 autoreload 19408 19200 Watching for file changes with StatReloader
+INFO 2023-09-05 16:56:48,637 basehttp 19408 19124 "GET /hw3/client/2 HTTP/1.1" 200 278
+INFO 2023-09-05 16:57:25,750 basehttp 19408 19124 "GET /hw3/client/2 HTTP/1.1" 200 326
+INFO 2023-09-05 17:06:47,994 autoreload 16436 22208 Watching for file changes with StatReloader
+INFO 2023-09-05 17:06:55,502 basehttp 16436 15816 "GET /hw3/client/1 HTTP/1.1" 200 560
+INFO 2023-09-05 17:23:05,563 autoreload 3012 14852 Watching for file changes with StatReloader
+INFO 2023-09-05 17:23:06,474 basehttp 3012 7056 "GET / HTTP/1.1" 200 208
+INFO 2023-09-05 17:23:13,893 basehttp 3012 7056 "GET /hw3/client/1 HTTP/1.1" 301 0
+INFO 2023-09-05 17:23:13,907 basehttp 3012 17584 "GET /hw3/client/1/ HTTP/1.1" 200 560
+INFO 2023-09-05 17:23:14,369 basehttp 3012 17584 "GET /hw3/client/1/ HTTP/1.1" 200 560
+INFO 2023-09-05 17:23:16,760 basehttp 3012 17584 "GET /hw3/client/1/ HTTP/1.1" 200 560
+INFO 2023-09-05 17:23:22,228 basehttp 3012 17584 "GET /hw3/client/week/1 HTTP/1.1" 301 0
+ERROR 2023-09-05 17:23:22,294 log 3012 3224 Internal Server Error: /hw3/client/week/1/
+Traceback (most recent call last):
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\views\generic\base.py", line 226, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_3_app\views.py", line 28, in get_context_data
+    orders = Order.objects.filter(customer=client, date__range=[startdate, enddate])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1426, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1236, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gapli\Downloads\GB_Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'date' into field. Choices are: customer, customer_id, date_ordered, id, products, total_price
+ERROR 2023-09-05 17:23:22,300 basehttp 3012 3224 "GET /hw3/client/week/1/ HTTP/1.1" 500 129681
+INFO 2023-09-05 17:23:51,102 autoreload 3012 14852 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_3_app\views.py changed, reloading.
+INFO 2023-09-05 17:23:51,562 autoreload 21384 22256 Watching for file changes with StatReloader
+INFO 2023-09-05 17:23:52,634 basehttp 21384 16268 "GET /hw3/client/week/1/ HTTP/1.1" 200 571
+INFO 2023-09-05 17:25:27,625 basehttp 21384 16268 "GET /hw3/client/week/1/ HTTP/1.1" 200 406
+INFO 2023-09-05 17:26:22,971 autoreload 21384 22256 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_3_app\views.py changed, reloading.
+INFO 2023-09-05 17:26:23,436 autoreload 10208 20936 Watching for file changes with StatReloader
+INFO 2023-09-05 17:26:25,316 basehttp 10208 20072 "GET /hw3/client/week/1/ HTTP/1.1" 200 415
+INFO 2023-09-05 17:28:06,661 basehttp 10208 20072 "GET /hw3/client/week/1/ HTTP/1.1" 200 415
+INFO 2023-09-05 17:28:06,919 autoreload 10208 20936 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_3_app\urls.py changed, reloading.
+INFO 2023-09-05 17:28:07,459 autoreload 21972 10732 Watching for file changes with StatReloader
+INFO 2023-09-05 17:28:10,466 basehttp 21972 18088 "GET /hw3/client/month/1/ HTTP/1.1" 200 415
+INFO 2023-09-05 17:28:17,838 basehttp 21972 18088 "GET /hw3/client/year/1/ HTTP/1.1" 200 590
+INFO 2023-09-05 17:29:23,985 basehttp 21972 18088 "GET /hw3/client/year/1/ HTTP/1.1" 200 528
+INFO 2023-09-05 17:29:46,027 basehttp 21972 18088 "GET /hw3/client/week/1/ HTTP/1.1" 200 418
+INFO 2023-09-09 20:34:22,566 autoreload 23380 8204 Watching for file changes with StatReloader
+INFO 2023-09-09 20:34:25,287 basehttp 23380 9392 "GET / HTTP/1.1" 200 208
+WARNING 2023-09-09 20:34:32,501 log 23380 9392 Not Found: /hw4
+WARNING 2023-09-09 20:34:32,502 basehttp 23380 9392 "GET /hw4 HTTP/1.1" 404 2631
+WARNING 2023-09-09 20:34:34,824 log 23380 9392 Not Found: /hw4/
+WARNING 2023-09-09 20:34:34,824 basehttp 23380 9392 "GET /hw4/ HTTP/1.1" 404 2719
+INFO 2023-09-09 20:34:48,323 basehttp 23380 9392 "GET /hw4/update_product/ HTTP/1.1" 200 1135
+INFO 2023-09-09 20:36:27,438 basehttp 23380 9392 "POST /hw4/update_product/ HTTP/1.1" 200 4314
+INFO 2023-09-09 20:41:12,667 autoreload 23380 8204 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_2_app\models.py changed, reloading.
+INFO 2023-09-09 20:41:13,166 autoreload 24272 18272 Watching for file changes with StatReloader
+INFO 2023-09-09 23:40:46,033 autoreload 14984 17944 Watching for file changes with StatReloader
+INFO 2023-09-09 23:47:02,130 autoreload 9400 19156 Watching for file changes with StatReloader
+INFO 2023-09-09 23:47:04,128 basehttp 9400 23944 "GET / HTTP/1.1" 200 208
+INFO 2023-09-09 23:47:13,828 basehttp 9400 23944 "GET /hw3/client/1 HTTP/1.1" 301 0
+INFO 2023-09-09 23:47:13,846 basehttp 9400 10496 "GET /hw3/client/1/ HTTP/1.1" 200 558
+WARNING 2023-09-09 23:47:16,293 log 9400 10496 Not Found: /hw4/
+WARNING 2023-09-09 23:47:16,294 basehttp 9400 10496 "GET /hw4/ HTTP/1.1" 404 2920
+INFO 2023-09-09 23:47:21,142 basehttp 9400 10496 "GET /hw4/upload_image_product/ HTTP/1.1" 200 665
+INFO 2023-09-09 23:47:41,532 autoreload 9400 19156 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_4_app\views.py changed, reloading.
+INFO 2023-09-09 23:47:41,977 autoreload 21396 13972 Watching for file changes with StatReloader
+INFO 2023-09-09 23:47:42,794 basehttp 21396 19360 "GET /hw4/upload_image_product/ HTTP/1.1" 200 686
+INFO 2023-09-09 23:47:48,621 basehttp 21396 19360 "POST /hw4/upload_image_product/ HTTP/1.1" 200 733
+INFO 2023-09-09 23:48:02,408 basehttp 21396 19360 "POST /hw4/upload_image_product/ HTTP/1.1" 200 733
+INFO 2023-09-09 23:49:11,442 basehttp 21396 19360 "POST /hw4/upload_image_product/ HTTP/1.1" 200 733
+INFO 2023-09-09 23:50:43,055 autoreload 21396 13972 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_4_app\views.py changed, reloading.
+INFO 2023-09-09 23:50:43,470 autoreload 17536 19416 Watching for file changes with StatReloader
+INFO 2023-09-09 23:50:45,871 basehttp 17536 16632 "POST /hw4/upload_image_product/ HTTP/1.1" 200 733
+INFO 2023-09-09 23:50:48,814 basehttp 17536 16632 "GET /hw4/upload_image_product/ HTTP/1.1" 200 686
+INFO 2023-09-09 23:50:56,141 basehttp 17536 16632 "GET /hw4/upload_image_product/ HTTP/1.1" 200 686
+INFO 2023-09-09 23:51:03,838 basehttp 17536 16632 "POST /hw4/upload_image_product/ HTTP/1.1" 200 733
+INFO 2023-09-09 23:51:57,414 autoreload 17536 19416 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_4_app\views.py changed, reloading.
+INFO 2023-09-09 23:51:57,840 autoreload 20964 21936 Watching for file changes with StatReloader
+INFO 2023-09-09 23:52:02,144 basehttp 20964 18088 "POST /hw4/upload_image_product/ HTTP/1.1" 200 733
+INFO 2023-09-09 23:54:02,815 autoreload 20964 21936 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_4_app\views.py changed, reloading.
+INFO 2023-09-09 23:54:03,245 autoreload 9600 18588 Watching for file changes with StatReloader
+INFO 2023-09-09 23:54:05,569 basehttp 9600 25308 "POST /hw4/upload_image_product/ HTTP/1.1" 200 755
+INFO 2023-09-09 23:54:12,367 basehttp 9600 25308 "POST /hw4/upload_image_product/ HTTP/1.1" 200 722
+INFO 2023-09-09 23:54:54,966 autoreload 9600 18588 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_4_app\views.py changed, reloading.
+INFO 2023-09-09 23:54:55,378 autoreload 21072 14272 Watching for file changes with StatReloader
+INFO 2023-09-13 15:49:39,287 autoreload 13980 4692 Watching for file changes with StatReloader
+INFO 2023-09-13 15:49:43,293 basehttp 13980 17648 "GET /admin/seminar_3_app/author/?q=Chi HTTP/1.1" 302 0
+INFO 2023-09-13 15:49:43,320 basehttp 13980 17648 "GET /admin/login/?next=/admin/seminar_3_app/author/%3Fq%3DChi HTTP/1.1" 200 4239
+INFO 2023-09-13 15:49:47,897 basehttp 13980 17648 "POST /admin/login/?next=/admin/seminar_3_app/author/%3Fq%3DChi HTTP/1.1" 200 4401
+INFO 2023-09-13 15:49:53,235 basehttp 13980 17648 "POST /admin/login/?next=/admin/seminar_3_app/author/%3Fq%3DChi HTTP/1.1" 302 0
+WARNING 2023-09-13 15:49:53,247 log 13980 17648 Not Found: /admin/seminar_3_app/author/
+WARNING 2023-09-13 15:49:53,247 basehttp 13980 17648 "GET /admin/seminar_3_app/author/?q=Chi HTTP/1.1" 404 4374
+INFO 2023-09-13 15:49:58,932 basehttp 13980 17648 "GET /admin HTTP/1.1" 301 0
+INFO 2023-09-13 15:49:58,949 basehttp 13980 14976 "GET /admin/ HTTP/1.1" 200 5557
+INFO 2023-09-13 15:50:45,297 autoreload 13980 4692 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_2_app\admin.py changed, reloading.
+INFO 2023-09-13 15:50:45,770 autoreload 9924 14272 Watching for file changes with StatReloader
+INFO 2023-09-13 15:50:47,580 basehttp 9924 19020 "GET /admin/ HTTP/1.1" 200 7149
+INFO 2023-09-13 15:50:48,505 basehttp 9924 19020 "GET /admin/homework_2_app/client/ HTTP/1.1" 200 12523
+INFO 2023-09-13 15:50:48,544 basehttp 9924 19020 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:52:03,072 autoreload 9924 14272 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_2_app\admin.py changed, reloading.
+INFO 2023-09-13 15:52:03,533 autoreload 16820 22016 Watching for file changes with StatReloader
+INFO 2023-09-13 15:52:05,256 basehttp 16820 16888 "GET /admin/homework_2_app/client/ HTTP/1.1" 200 12523
+INFO 2023-09-13 15:52:05,275 basehttp 16820 16888 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:52:06,355 basehttp 16820 16888 "GET /admin/homework_2_app/client/ HTTP/1.1" 200 12523
+INFO 2023-09-13 15:52:06,371 basehttp 16820 16888 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:52:14,258 autoreload 16820 22016 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_2_app\admin.py changed, reloading.
+INFO 2023-09-13 15:52:14,753 autoreload 14932 21444 Watching for file changes with StatReloader
+INFO 2023-09-13 15:52:15,770 basehttp 14932 11696 "GET /admin/homework_2_app/client/ HTTP/1.1" 200 12528
+INFO 2023-09-13 15:52:15,786 basehttp 14932 11696 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:53:34,966 autoreload 14932 21444 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_2_app\admin.py changed, reloading.
+INFO 2023-09-13 15:53:35,482 autoreload 16724 17652 Watching for file changes with StatReloader
+INFO 2023-09-13 15:53:43,873 autoreload 16724 17652 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_2_app\admin.py changed, reloading.
+INFO 2023-09-13 15:53:44,311 autoreload 10288 11808 Watching for file changes with StatReloader
+INFO 2023-09-13 15:53:46,232 basehttp 10288 19616 "GET /admin/homework_2_app/product/ HTTP/1.1" 200 20564
+INFO 2023-09-13 15:53:46,327 basehttp 10288 19616 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:53:59,350 basehttp 10288 19616 "GET /admin/homework_2_app/product/50/change/ HTTP/1.1" 200 11742
+INFO 2023-09-13 15:53:59,389 basehttp 10288 19616 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:54:00,135 autoreload 10288 11808 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_2_app\admin.py changed, reloading.
+INFO 2023-09-13 15:54:00,633 autoreload 9404 14900 Watching for file changes with StatReloader
+INFO 2023-09-13 15:54:01,858 basehttp 9404 10884 "GET /admin/homework_2_app/product/ HTTP/1.1" 200 20564
+INFO 2023-09-13 15:54:02,839 basehttp 9404 10884 "GET /admin/homework_2_app/product/50/change/ HTTP/1.1" 200 11742
+INFO 2023-09-13 15:54:02,860 basehttp 9404 10884 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:54:46,147 basehttp 9404 10884 "GET /admin/homework_2_app/product/ HTTP/1.1" 200 20564
+INFO 2023-09-13 15:54:46,180 basehttp 9404 10884 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:54:47,056 autoreload 9404 14900 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_2_app\admin.py changed, reloading.
+INFO 2023-09-13 15:54:47,580 autoreload 3208 3828 Watching for file changes with StatReloader
+INFO 2023-09-13 15:55:22,646 autoreload 3208 3828 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_2_app\admin.py changed, reloading.
+INFO 2023-09-13 15:55:23,073 autoreload 8872 7464 Watching for file changes with StatReloader
+INFO 2023-09-13 15:55:24,653 basehttp 8872 4032 "GET /admin/homework_2_app/product/1/change/ HTTP/1.1" 200 14961
+INFO 2023-09-13 15:55:24,740 basehttp 8872 4032 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+WARNING 2023-09-13 15:55:26,873 log 8872 4032 Not Found: /products/products/2023-09-05_10-35-32.png
+WARNING 2023-09-13 15:55:26,873 basehttp 8872 4032 "GET /products/products/2023-09-05_10-35-32.png HTTP/1.1" 404 2745
+INFO 2023-09-13 15:55:30,068 basehttp 8872 4032 "GET /admin/homework_2_app/product/1/change/ HTTP/1.1" 200 14961
+INFO 2023-09-13 15:55:36,833 basehttp 8872 4032 "GET /admin/homework_2_app/product/ HTTP/1.1" 200 30091
+INFO 2023-09-13 15:55:36,853 basehttp 8872 4032 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:56:26,014 autoreload 8872 7464 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_2_app\admin.py changed, reloading.
+INFO 2023-09-13 15:56:26,454 autoreload 13816 2492 Watching for file changes with StatReloader
+INFO 2023-09-13 15:56:27,936 basehttp 13816 19260 "GET /admin/homework_2_app/product/ HTTP/1.1" 200 30091
+INFO 2023-09-13 15:56:27,959 basehttp 13816 19260 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:56:30,022 basehttp 13816 19260 "GET /admin/homework_2_app/product/ HTTP/1.1" 200 30091
+INFO 2023-09-13 15:56:30,040 basehttp 13816 19260 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:56:46,360 autoreload 13816 2492 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_2_app\admin.py changed, reloading.
+INFO 2023-09-13 15:56:46,798 autoreload 12816 10320 Watching for file changes with StatReloader
+INFO 2023-09-13 15:56:48,390 basehttp 12816 22104 "GET /admin/homework_2_app/product/ HTTP/1.1" 200 30091
+INFO 2023-09-13 15:56:48,412 basehttp 12816 22104 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:57:34,421 autoreload 12816 10320 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_2_app\admin.py changed, reloading.
+INFO 2023-09-13 15:57:34,946 autoreload 9944 20444 Watching for file changes with StatReloader
+INFO 2023-09-13 15:57:35,605 basehttp 9944 12344 "GET /admin/homework_2_app/product/ HTTP/1.1" 200 27391
+INFO 2023-09-13 15:57:35,628 basehttp 9944 12344 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:57:47,458 basehttp 9944 12344 "GET /admin/homework_2_app/product/?o=1 HTTP/1.1" 200 28953
+INFO 2023-09-13 15:57:47,492 basehttp 9944 12344 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:57:47,538 basehttp 9944 12344 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2023-09-13 15:57:48,819 basehttp 9944 12344 "GET /admin/homework_2_app/product/?o=-1 HTTP/1.1" 200 29006
+INFO 2023-09-13 15:57:48,843 basehttp 9944 12344 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:58:23,431 autoreload 9944 20444 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_2_app\admin.py changed, reloading.
+INFO 2023-09-13 15:58:23,884 autoreload 10068 4672 Watching for file changes with StatReloader
+INFO 2023-09-13 15:58:26,290 basehttp 10068 11588 "GET /admin/homework_2_app/product/?o=-1 HTTP/1.1" 200 29006
+INFO 2023-09-13 15:58:26,312 basehttp 10068 11588 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:58:30,576 basehttp 10068 11588 "GET /admin/homework_2_app/product/ HTTP/1.1" 200 27629
+INFO 2023-09-13 15:58:30,606 basehttp 10068 11588 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:58:50,136 autoreload 10068 4672 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_2_app\admin.py changed, reloading.
+INFO 2023-09-13 15:58:50,579 autoreload 24016 20760 Watching for file changes with StatReloader
+INFO 2023-09-13 15:58:52,644 basehttp 24016 8 "GET /admin/homework_2_app/product/ HTTP/1.1" 200 31389
+INFO 2023-09-13 15:58:52,667 basehttp 24016 8 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:58:58,461 basehttp 24016 8 "GET /admin/homework_2_app/product/?date_added__gte=2023-09-13&date_added__lt=2023-09-14 HTTP/1.1" 200 15733
+INFO 2023-09-13 15:58:58,483 basehttp 24016 8 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:58:59,219 basehttp 24016 8 "GET /admin/homework_2_app/product/?date_added__gte=2023-09-06&date_added__lt=2023-09-14 HTTP/1.1" 200 15733
+INFO 2023-09-13 15:58:59,255 basehttp 24016 8 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:58:59,782 basehttp 24016 8 "GET /admin/homework_2_app/product/?date_added__gte=2023-09-01&date_added__lt=2023-10-01 HTTP/1.1" 200 38937
+INFO 2023-09-13 15:58:59,804 basehttp 24016 8 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:59:00,763 basehttp 24016 8 "GET /admin/homework_2_app/product/?date_added__gte=2023-01-01&date_added__lt=2024-01-01 HTTP/1.1" 200 38937
+INFO 2023-09-13 15:59:00,797 basehttp 24016 8 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:59:02,542 basehttp 24016 8 "GET /admin/homework_2_app/product/?date_added__gte=2023-09-13&date_added__lt=2023-09-14 HTTP/1.1" 200 15733
+INFO 2023-09-13 15:59:02,562 basehttp 24016 8 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:59:03,000 basehttp 24016 8 "GET /admin/homework_2_app/product/? HTTP/1.1" 200 31389
+INFO 2023-09-13 15:59:03,035 basehttp 24016 8 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:59:39,164 autoreload 24016 20760 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_2_app\admin.py changed, reloading.
+INFO 2023-09-13 15:59:39,619 autoreload 19376 17928 Watching for file changes with StatReloader
+INFO 2023-09-13 15:59:40,687 basehttp 19376 4844 "GET /admin/homework_2_app/product/? HTTP/1.1" 200 31850
+INFO 2023-09-13 15:59:40,706 basehttp 19376 4844 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:59:46,327 basehttp 19376 4844 "GET /admin/homework_2_app/product/?q=%D0%BA%D0%BE%D0%BC%D0%BF HTTP/1.1" 200 16535
+INFO 2023-09-13 15:59:46,351 basehttp 19376 4844 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:59:48,790 basehttp 19376 4844 "GET /admin/homework_2_app/product/?q=%D0%B8%D0%B3%D1%80 HTTP/1.1" 200 14433
+INFO 2023-09-13 15:59:48,824 basehttp 19376 4844 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:59:51,580 basehttp 19376 4844 "GET /admin/homework_2_app/product/?q=%D0%98%D0%B3%D1%80 HTTP/1.1" 200 16147
+INFO 2023-09-13 15:59:51,603 basehttp 19376 4844 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 15:59:59,373 basehttp 19376 4844 "GET /admin/homework_2_app/product/ HTTP/1.1" 200 31850
+INFO 2023-09-13 15:59:59,404 basehttp 19376 4844 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 16:00:08,408 basehttp 19376 4844 "GET /admin/homework_2_app/order/ HTTP/1.1" 200 11535
+INFO 2023-09-13 16:00:08,433 basehttp 19376 4844 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 16:00:39,346 autoreload 19376 17928 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_2_app\admin.py changed, reloading.
+INFO 2023-09-13 16:00:39,791 autoreload 6368 19564 Watching for file changes with StatReloader
+INFO 2023-09-13 16:00:51,351 autoreload 6368 19564 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_2_app\admin.py changed, reloading.
+INFO 2023-09-13 16:00:51,823 autoreload 13672 2640 Watching for file changes with StatReloader
+INFO 2023-09-13 16:00:52,002 basehttp 13672 5460 "GET /admin/homework_2_app/order/ HTTP/1.1" 200 14342
+INFO 2023-09-13 16:00:52,034 basehttp 13672 5460 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 16:00:53,989 basehttp 13672 5460 "GET /admin/homework_2_app/order/ HTTP/1.1" 200 14342
+INFO 2023-09-13 16:00:54,010 basehttp 13672 5460 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 16:00:59,301 basehttp 13672 5460 "GET /admin/homework_2_app/order/22/change/ HTTP/1.1" 200 16235
+INFO 2023-09-13 16:00:59,338 basehttp 13672 5460 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 16:01:03,371 basehttp 13672 5460 "GET /admin/homework_2_app/product/add/?_to_field=id&_popup=1 HTTP/1.1" 200 6935
+INFO 2023-09-13 16:01:03,403 basehttp 13672 5460 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 16:01:06,250 basehttp 13672 5460 "GET /admin/homework_2_app/order/ HTTP/1.1" 200 14342
+INFO 2023-09-13 18:51:17,213 autoreload 9192 22636 Watching for file changes with StatReloader
+INFO 2023-09-13 18:51:18,672 basehttp 9192 23324 "GET /admin/homework_2_app/order/ HTTP/1.1" 200 15321
+INFO 2023-09-13 18:51:18,701 basehttp 9192 23324 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 18:51:18,760 basehttp 9192 23324 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2023-09-13 18:51:18,774 basehttp 9192 3808 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2023-09-13 18:51:18,775 basehttp 9192 24052 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2023-09-13 18:51:30,231 basehttp 9192 24052 "GET /admin/homework_2_app/order/22/change/ HTTP/1.1" 200 16235
+INFO 2023-09-13 18:51:30,252 basehttp 9192 24052 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 18:51:30,260 basehttp 9192 3808 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2023-09-13 18:51:30,262 basehttp 9192 24052 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2023-09-13 18:51:53,473 basehttp 9192 24052 "GET /admin/homework_2_app/order/ HTTP/1.1" 200 15321
+INFO 2023-09-13 18:51:54,392 basehttp 9192 24052 "GET /admin/homework_2_app/order/21/change/ HTTP/1.1" 200 16235
+INFO 2023-09-13 18:51:54,430 basehttp 9192 24052 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 18:52:08,500 basehttp 9192 24052 "GET /admin/homework_2_app/order/ HTTP/1.1" 200 15321
+INFO 2023-09-13 18:52:24,969 basehttp 9192 24052 "GET /admin/homework_2_app/client/ HTTP/1.1" 200 12528
+INFO 2023-09-13 18:52:24,992 basehttp 9192 24052 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 18:52:26,097 basehttp 9192 24052 "GET /admin/homework_2_app/client/11/change/ HTTP/1.1" 200 11436
+INFO 2023-09-13 18:52:26,134 basehttp 9192 24052 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 18:52:35,882 basehttp 9192 24052 "GET /admin/homework_2_app/client/ HTTP/1.1" 200 12528
+INFO 2023-09-13 18:52:37,065 basehttp 9192 24052 "GET /admin/homework_2_app/client/10/change/ HTTP/1.1" 200 11480
+INFO 2023-09-13 18:52:37,088 basehttp 9192 24052 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 18:52:37,967 basehttp 9192 24052 "GET /admin/homework_2_app/client/ HTTP/1.1" 200 12528
+INFO 2023-09-13 18:52:39,068 basehttp 9192 24052 "GET /admin/homework_2_app/client/11/change/ HTTP/1.1" 200 11436
+INFO 2023-09-13 18:52:39,101 basehttp 9192 24052 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 18:53:02,238 basehttp 9192 24052 "GET /admin/homework_2_app/client/ HTTP/1.1" 200 12528
+INFO 2023-09-13 18:53:03,194 basehttp 9192 24052 "GET /admin/homework_2_app/client/9/change/ HTTP/1.1" 200 11466
+INFO 2023-09-13 18:53:03,220 basehttp 9192 24052 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 18:53:04,147 basehttp 9192 24052 "GET /admin/homework_2_app/client/ HTTP/1.1" 200 12528
+INFO 2023-09-13 18:53:48,196 autoreload 9192 22636 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_2_app\admin.py changed, reloading.
+INFO 2023-09-13 18:53:48,646 autoreload 21108 21804 Watching for file changes with StatReloader
+INFO 2023-09-13 18:53:49,943 basehttp 21108 17532 "GET /admin/homework_2_app/client/11/change/ HTTP/1.1" 200 12002
+INFO 2023-09-13 18:53:49,981 basehttp 21108 17532 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 18:53:55,912 basehttp 21108 17532 "GET /admin/homework_2_app/order/ HTTP/1.1" 200 15321
+INFO 2023-09-13 18:53:55,931 basehttp 21108 17532 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 18:53:56,763 basehttp 21108 17532 "GET /admin/homework_2_app/product/ HTTP/1.1" 200 31850
+INFO 2023-09-13 18:53:56,793 basehttp 21108 17532 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 18:53:56,830 basehttp 21108 15692 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2023-09-13 18:53:57,693 basehttp 21108 15692 "GET /admin/homework_2_app/product/14/change/ HTTP/1.1" 200 11742
+INFO 2023-09-13 18:53:57,721 basehttp 21108 15692 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 18:54:58,789 autoreload 21108 21804 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_2_app\admin.py changed, reloading.
+INFO 2023-09-13 18:54:59,269 autoreload 23872 24040 Watching for file changes with StatReloader
+INFO 2023-09-13 18:54:59,851 basehttp 23872 17512 "GET /admin/homework_2_app/product/14/change/ HTTP/1.1" 200 12294
+INFO 2023-09-13 18:54:59,875 basehttp 23872 17512 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 18:55:07,375 basehttp 23872 17512 "GET /admin/homework_2_app/order/ HTTP/1.1" 200 15321
+INFO 2023-09-13 18:55:07,404 basehttp 23872 17512 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 18:55:08,608 basehttp 23872 17512 "GET /admin/homework_2_app/order/22/change/ HTTP/1.1" 200 16235
+INFO 2023-09-13 18:55:08,629 basehttp 23872 17512 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 18:55:09,990 basehttp 23872 17512 "GET /admin/homework_2_app/order/ HTTP/1.1" 200 15321
+INFO 2023-09-13 18:55:22,358 basehttp 23872 17512 "GET /admin/homework_2_app/order/22/change/ HTTP/1.1" 200 16235
+INFO 2023-09-13 18:55:22,387 basehttp 23872 17512 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 18:55:23,168 autoreload 23872 24040 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_2_app\admin.py changed, reloading.
+INFO 2023-09-13 18:55:23,653 autoreload 20380 25024 Watching for file changes with StatReloader
+INFO 2023-09-13 18:55:45,417 autoreload 20380 25024 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_2_app\admin.py changed, reloading.
+INFO 2023-09-13 18:55:45,836 autoreload 6536 3980 Watching for file changes with StatReloader
+INFO 2023-09-13 18:55:47,329 basehttp 6536 2956 "GET /admin/homework_2_app/order/22/change/ HTTP/1.1" 200 16790
+INFO 2023-09-13 18:55:47,351 basehttp 6536 2956 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-13 18:56:00,623 autoreload 6536 3980 C:\Users\gapli\Downloads\GB_Django\Homeworks\homework_project\homework_2_app\admin.py changed, reloading.
+INFO 2023-09-13 18:56:01,063 autoreload 20768 16724 Watching for file changes with StatReloader
+INFO 2023-09-13 18:56:02,461 basehttp 20768 18856 "GET /admin/homework_2_app/order/22/change/ HTTP/1.1" 200 10951
+INFO 2023-09-13 18:56:02,487 basehttp 20768 18856 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
